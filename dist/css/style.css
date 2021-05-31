@@ -38,6 +38,11 @@ body {
   font-family: inter;
 }
 
+.container {
+  max-width: 1232px;
+  margin: 0 auto;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,9 +53,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: 1232px;
   padding: 33px 15px;
-  margin: 0 auto;
 }
 
 .nav {
@@ -89,3 +92,53 @@ body {
   background-color: #624de3;
   text-decoration: none;
 }
+
+.top {
+  background-image: url("img/top-bg-img.png") no-repeat;
+  background-color: #210935;
+  padding: 40px 0 400px;
+}
+
+.title {
+  color: #ffffff;
+  text-align: center;
+  width: 60rem;
+  margin: 0 auto;
+  font-size: 54px;
+}
+
+.text {
+  margin-top: 4rem;
+  text-align: center;
+  color: #6262db;
+}
+
+.top__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-column-gap: 1rem;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  margin-top: 8rem;
+}
+
+.top__btn {
+  color: #ffffff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  padding: 1.6rem 2.6rem;
+  border-radius: 0.6rem;
+  border: 1px solid #eee;
+  background-color: transparent;
+}
+
+.top__btn-active {
+  background-color: #624de3;
+  border: none;
+}
+
+.webp .top{ background-image: url(img/top-bg-img.webp) no-repeat; }

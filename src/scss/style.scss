@@ -26,13 +26,16 @@ body {
     font-size: 16px;
     font-family: inter;
 }
+.container{
+    max-width: 1232px;
+    margin: 0 auto;
+    
+}
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1232px;
     padding: 33px 15px;
-    margin: 0 auto;
 }
 .nav {
     list-style: none;
@@ -60,4 +63,40 @@ body {
         background-color: $purple;
         text-decoration: none;
     }
+}
+.top{
+    background-image: url("img/top-bg-img.png") no-repeat;
+    background-color: rgb(33, 9, 53);
+    padding: 40px 0 400px;
+}
+.title{
+    color:$white;
+    text-align: center;
+    width: 60rem;
+    margin: 0 auto;
+    font-size: 54px;
+}
+.text{
+    margin-top: 4rem;
+    text-align: center;
+    color: rgb(98, 98, 219);
+}
+.top__btns{
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-top: 8rem;
+}
+.top__btn{
+    color: $white;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 1.6rem 2.6rem;
+    border-radius: 0.6rem;
+    border: 1px solid #eee;
+    background-color: transparent;
+}
+.top__btn-active{
+    background-color: $purple;
+    border: none;
 }

@@ -48,6 +48,7 @@ let {
     ttf2woff = require("gulp-ttf2woff"),
     ttf2woff2 = require("gulp-ttf2woff2"),
     fonter = require("gulp-fonter"),
+    sourcemaps = require('gulp-sourcemaps'),
     scss = require("gulp-sass");
 
 function browserSync(params) {
@@ -112,6 +113,7 @@ function js() {
 
 function css() {
     return src(path.src.css)
+        // .pipe(sourcemaps.init())
         .pipe(
             scss({
                 outputStyle: "expanded",
@@ -132,6 +134,7 @@ function css() {
                 extname: ".min.css",
             })
         )
+        // .pipe(sourcemaps.write())
         .pipe(dest(path.build.css))
         .pipe(browsersync.stream());
 }

@@ -29,7 +29,7 @@ body {
 .container{
     max-width: 1232px;
     margin: 0 auto;
-    
+
 }
 .header {
     display: flex;
@@ -125,14 +125,16 @@ body {
         width: 117.9rem;
     }
     &__item{
-        background-color: #aaa;
+        background: rgba(16, 10, 48, 0.03);
+        border-radius: 8px;
+        overflow: hidden;
     }
 
     &__item_green{
-        background-color: #b9ffdf;
+        background: rgba(25, 199, 135, 0.05);
     }
     &__item_yellow{
-        background-color: rgb(231, 215, 126);
+        background: rgba(252, 185, 52, 0.05);
     }
     &__card{
         display: flex;
@@ -179,12 +181,26 @@ body {
     }
     &__period{
         color: $white;
-        font-family: inherit;
     }
     &__list{
-        font-family: inherit;
+        padding: 0 10px;
     }
     &__listitem{
-        font-family: inherit;
+        font-size: 18px;
+        position: relative;
+        list-style: none;
+        padding-left: 35px;
+        &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0%;
+            height: 23px;
+            width: 23px;
+            background: url(/img/list-icon.svg) no-repeat;
+
+        }
+
     }
 }
